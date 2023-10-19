@@ -1,0 +1,48 @@
+/*
+ * Copyright (c) 2020 Intel Corporation
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/ {
+    gpio_i2c0: gpio_i2c {                                                                                         
+    	compatible = "gpio-i2c";
+    	status = "okay";
+    	clock-frequency = <I2C_BITRATE_STANDARD>;
+    	sda-gpios = <&gpio0 26 (GPIO_OPEN_DRAIN | GPIO_PULL_UP)>;
+        scl-gpios = <&gpio0 27 (GPIO_OPEN_DRAIN | GPIO_PULL_UP)>;
+        label = "GPIO_I2C_0";
+        #address-cells = <1>;
+        #size-cells = <0>;
+    };
+};
+
+&i2c0 {
+    status = "disabled";
+};
+
+&spi1 {
+	status = "disabled";
+};
+
+&spi3 {
+	status = "disabled";
+};
+
+&qspi {
+	status = "disabled";
+};
+
+
+/ {
+	gpio_spi0: gpio_spi {
+		compatible = "zephyr,spi-bitbang";
+		status="okay";
+		#address-cells = <1>;
+		#size-cells = <0>;
+		clk-gpios = <&gpio0 19 GPIO_ACTIVE_HIGH>;
+		mosi-gpios = <&gpio0 20 GPIO_ACTIVE_HIGH>;
+		miso-gpios = <&gpio0 21 0>;
+		cs-gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
+	};
+};
