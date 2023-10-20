@@ -1,0 +1,8 @@
+user_storage:
+  address: 0xfe000
+  size: 0x2000
+  end_address: 0x100000
+  placement:
+  before:
+  - end
+  region: flash_primary
