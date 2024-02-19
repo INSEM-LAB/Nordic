@@ -13,23 +13,23 @@ P1.03과 P1.04 모두 high state인 경우 DTM 모드로 동작합니다.
 
 github 파일들은 reference NCS 저장 위치에서 아래 위치한 파일로 변경이 되어야 하며 폴더(hci_rpmsg_ohsung)은 아래 위치에 위치시키면 됩니다
 
-1. mpsl_init.c
+<mpsl_init.c>
 
-nrf\subsys\mpsl\init\
+디렉토리 : nrf\subsys\mpsl\init\
 
-2. CMakeLists.txt, Kconfig
+<CMakeLists.txt, Kconfig>
 
 nrf\samples\
 
-3. uart_ipc.c
+<uart_ipc.c>
 
-nrf\drivers\serial\
+디렉토리 : nrf\drivers\serial\
 
-4. hci_rpmsg_ohsung
+<hci_rpmsg_ohsung>
 
-zephyr\samples\bluetooth\
+디렉토리 : zephyr\samples\bluetooth\
 
-5. v240_dtm_uart_nrf5340dk
+<v240_dtm_uart_nrf5340dk>
 
 BLE peripheral uart 기반으로 DTM 기능을 추가한 application code 입니다.
 
