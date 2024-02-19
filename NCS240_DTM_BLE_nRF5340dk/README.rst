@@ -15,7 +15,7 @@ github 파일들은 reference NCS 저장 위치에서 아래 위치한 파일로
 
 <mpsl_init.c>
 
-디렉토리 : nrf\subsys\mpsl\init\
+nrf\\subsys\\mpsl\\init\\
 
 <CMakeLists.txt, Kconfig>
 
