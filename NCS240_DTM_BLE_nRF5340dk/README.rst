@@ -15,25 +15,26 @@ github 파일들은 reference NCS 저장 위치에서 아래 위치한 파일로
 
 <mpsl_init.c>
 
-nrf\\subsys\\mpsl\\init\\
+위치 : nrf\\subsys\\mpsl\\init\\
 
 <CMakeLists.txt, Kconfig>
 
-nrf\samples\
+위치 : nrf\\samples\\
 
 <uart_ipc.c>
 
-디렉토리 : nrf\drivers\serial\
+위치 : nrf\\drivers\\serial\\
 
-<hci_rpmsg_ohsung>
+<hci_rpmsg_ohsung> 압축 해제 후 사용
 
-디렉토리 : zephyr\samples\bluetooth\
+위치 : zephyr\\samples\\bluetooth\\
 
-<v240_dtm_uart_nrf5340dk>
+<v240_dtm_uart_nrf5340dk> 압축 해제 후 사용
 
 BLE peripheral uart 기반으로 DTM 기능을 추가한 application code 입니다.
 
 Visual Studio에서 'Open an existing application'을 선택하여 load한 후 사용합니다.
+
 
 Requirements
 ************
