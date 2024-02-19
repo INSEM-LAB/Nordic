@@ -7,7 +7,7 @@ DTM(Direct Test Mode) + BLE peripheral uart example on nRF5340 DK
 
 nRF5340 DK를 기준으로 DTM(Direct Test Mode) + BLE peripheral uart example를 merge한 샘플 코드 입니다.
 
-Power on 때 P1.03(app core에서 check)과 P1.04(net core에서 check)하여 DTM 모드로 동작할지 BLE로 동작할지 선택하게 됩니다.
+Power on 때 P1.03(app core에서 check)과 P1.04(net core에서 check)을 확인 하여 DTM 모드로 동작할지 BLE로 동작할지 선택하게 됩니다.
 
 P1.03과 P1.04 모두 high state인 경우 DTM 모드로 동작합니다.
 
